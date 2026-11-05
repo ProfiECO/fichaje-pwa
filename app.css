@@ -48,3 +48,10 @@ nav button[aria-selected="true"] { color: var(--fg); border-color: var(--accent)
 #error { color: var(--out); margin: 12px 0 0; }
 #error:empty { display: none; }
 form input { font-size: 16px; } /* avoids iOS zoom on focus */
+
+#install { width: min(340px, calc(100% - 32px)); border: 0; border-radius: 12px; padding: 20px; background: var(--bg); color: var(--fg); text-align: center; }
+#install::backdrop { background: rgb(0 0 0 / .5); }
+#install img { border-radius: 12px; }
+#install h2 { font-size: 18px; margin: 8px 0 4px; }
+#install p { color: var(--muted); margin: 0 0 16px; }
+.install-actions { display: flex; justify-content: space-between; margin-top: 12px; }

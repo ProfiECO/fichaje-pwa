@@ -5,7 +5,7 @@ PWA para fichar en una instancia de [Frappe HR](https://github.com/frappe/hrms).
 - Pide dominio y credenciales, inicia sesión y se sincroniza con tu empleado.
 - Botón de **Entrada** / **Salida** según tu último fichaje y reloj con el tiempo que llevas dentro.
 - Pestaña **Semana** con las horas trabajadas cada día de la semana actual.
-- Instalable en escritorio y móvil, y abre sin conexión (los fichajes necesitan red).
+- Instalable en escritorio y móvil: ofrece instalarla (o explica cómo en iOS y Firefox) y abre sin conexión (los fichajes necesitan red).
 
 ## Requisito: mismo dominio o CORS
 

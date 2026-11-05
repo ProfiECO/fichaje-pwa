@@ -48,5 +48,19 @@
   </main>
 
   <p id="error" role="alert"></p>
+
+  <dialog id="install" aria-labelledby="install-title">
+    <form method="dialog">
+      <img src="icons/icon-192.png" alt="" width="56" height="56">
+      <h2 id="install-title">Instala Fichaje</h2>
+      <p id="install-text"></p>
+      <button type="button" id="install-ok" class="primary">Instalar</button>
+      <div class="install-actions">
+        <button value="later" class="link">Ahora no</button>
+        <button value="never" class="link">No volver a mostrar</button>
+      </div>
+    </form>
+  </dialog>
+  <script type="module" src="install.js"></script>
 </body>
 </html>

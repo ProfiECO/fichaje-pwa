@@ -1,6 +1,6 @@
 // Caches the app shell so it opens offline; API calls (other paths/origins) always go to the network.
-const CACHE = "fichaje-v1";
-const SHELL = ["./", "index.html", "app.css", "app.js", "api.js", "time.js", "manifest.webmanifest", "icons/icon-192.png"];
+const CACHE = "fichaje-v2";
+const SHELL = ["./", "index.html", "app.css", "app.js", "install.js", "api.js", "time.js", "manifest.webmanifest", "icons/icon-192.png"];
 
 self.addEventListener("install", (e) => e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL))));
 self.addEventListener("activate", (e) =>
