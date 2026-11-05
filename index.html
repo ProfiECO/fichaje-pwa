@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#16a34a">
+  <title>Fichaje</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="app.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <form id="setup" hidden>
+    <h1>Conectar con Frappe HR</h1>
+    <label>Dominio <input name="domain" type="url" required placeholder="https://tudominio.com"></label>
+    <label>Usuario <input name="usr" autocomplete="username" required></label>
+    <label>Contraseña <input name="pwd" type="password" autocomplete="current-password" required></label>
+    <button type="submit" class="primary">Conectar</button>
+  </form>
+
+  <main id="main" hidden>
+    <header>
+      <div>
+        <strong id="name"></strong>
+        <small id="domain"></small>
+      </div>
+      <button id="logout" class="link" title="Olvidar cuenta">Desconectar</button>
+    </header>
+
+    <nav role="tablist">
+      <button role="tab" data-tab="today" aria-selected="true">Hoy</button>
+      <button role="tab" data-tab="week" aria-selected="false">Semana</button>
+    </nav>
+
+    <section id="today" role="tabpanel">
+      <p id="status"></p>
+      <p id="clock" aria-live="off" hidden></p>
+      <p id="today-total"></p>
+      <button id="action" class="primary"></button>
+    </section>
+
+    <section id="week" role="tabpanel" hidden>
+      <ol id="days"></ol>
+      <p class="total">Total semana <strong id="week-total"></strong></p>
+    </section>
+  </main>
+
+  <p id="error" role="alert"></p>
+</body>
+</html>
